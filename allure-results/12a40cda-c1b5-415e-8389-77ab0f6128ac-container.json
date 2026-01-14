@@ -1,0 +1,1 @@
+{"uuid":"12a40cda-c1b5-415e-8389-77ab0f6128ac","name":"ClientApisTests.PostsTests","children":["b910e101-a73f-4bbe-9eb7-6d213bf1f9b1"],"befores":[{"name":"extractEndpointUrls","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1768411137941,"stop":1768411137949}],"afters":[],"start":1768411137893,"stop":1768411145426}
