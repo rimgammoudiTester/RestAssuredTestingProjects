@@ -9,6 +9,7 @@
     <test name="Test">
         <classes>
             <class name="ClientApisTests.PostsTests"/>
+            <class name="ClientApisTests.TodosTests"/>
         </classes>
     </test>
 </suite>

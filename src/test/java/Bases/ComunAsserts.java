@@ -44,6 +44,30 @@ public class ComunAsserts {
         Assert.assertNull(expectedParameter,"parameter is not null");
     }
 
+    //Method useful for ensuring that the expected value is a boolean Type
+
+    public boolean verifyTheTypeOfParameter(Response res,String path,int index,String type)
+    {
+        boolean isBoolean=false;
+      Object actualValue;
+         actualValue=res.jsonPath().getBoolean("[" + index + "]."+path);
+         Object v=actualValue.getClass().getSimpleName();
+         System.out.println(v);
+         if(v.equals(type))
+         {
+        isBoolean = true;}
+        return isBoolean;
+
+    }
+
+    //Method To check the type's variable=true
+
+    public void assertTheTypeParameterIstrue(boolean completedParameter)
+    {
+        Assert.assertTrue(completedParameter);
+
+    }
+
 
 
 

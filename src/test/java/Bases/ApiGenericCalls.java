@@ -24,8 +24,8 @@ public class ApiGenericCalls {
     }
 
     //Method for recuperate an object by pathParameter (By id)
-    Response recuperateAnObjectById(String baseUrl, HashMap<String, Object> map, String getEndpoint, int id) {
-       RequestSpecification req = setRequest(baseUrl, map).pathParam("id", id);
+    protected Response recuperateAnObjectById(String baseUrl,HashMap<String, Object> map, String getEndpoint, int id) {
+       RequestSpecification req = setRequest(baseUrl, map).pathParam("id",id);
         res = req.get(getEndpoint);
         res.then().log().all();
         return res;
